@@ -6,5 +6,7 @@ class ApplicationController < ActionController::Base
 
   def cart
     session[:cart] ||= []
+    #if ||= [] doesnt exist then session[:cart] = nil and will give user(front end) huge error
   end
+
 end
