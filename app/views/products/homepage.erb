@@ -1,0 +1,8 @@
+<h1>Here is your cart!</h1>
+<% @cart.each do |item|%>
+  <%= item.name %>
+<% end %>
+
+<%= form_for @item do |f|%>
+  <%= f.text_field :name%>
+<% end %>
