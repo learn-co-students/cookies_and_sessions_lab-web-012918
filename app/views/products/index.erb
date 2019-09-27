@@ -1,0 +1,14 @@
+<ul>
+  <% cart.each do |item| %>
+    <li><%= item %></li>
+  <% end %>
+</ul>
+
+
+
+<%= form_tag '/add' do %>
+  <label>Items</label><br>
+  <%= label_tag :product %>
+  <%= text_field_tag :product %><br>
+  <%= submit_tag "add to cart" %>
+<% end %>
