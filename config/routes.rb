@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  #root 'products#index' <- same as get '/'
+  #products is controller, # is the method
+
+
+  root 'products#index'
+  post '/', to: 'products#add'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
